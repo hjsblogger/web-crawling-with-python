@@ -1,0 +1,6 @@
+pytest-selenium
+selenium>=4.6.0
+urllib3>=1.26.12
+requests
+py
+bs4
