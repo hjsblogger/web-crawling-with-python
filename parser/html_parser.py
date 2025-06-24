@@ -7,7 +7,12 @@ from utils.url_utils import make_absolute_url, is_valid_product_url
 def extract_linked_urls(base_url, html):
     """Extract all linked URLs from HTML."""
     soup = BeautifulSoup(html, 'html.parser')
+    # locate all anchor tags in the page
+    # that have an href attribute
+    # More details
+    # https://www.crummy.com/software/BeautifulSoup/bs4/doc/#find-all
     for link in soup.find_all('a', href=True):
+        # Make an absolute URL from the fetched link
         yield make_absolute_url(base_url, link['href'])
 
 def extract_product_urls(base_url, html, base_domain):
