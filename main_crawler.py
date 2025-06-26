@@ -1,3 +1,7 @@
+# Took some cues from https://github.com/xukai92/crawlerfromscratch
+# and https://www.scrapingbee.com/blog/
+# crawling-python/#building-a-simple-web-crawler-in-python-from-scratch
+
 import sys
 sys.path.append(sys.path[0] + "/..")
 
