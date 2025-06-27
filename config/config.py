@@ -8,3 +8,6 @@ PRODUCT_URL_PATTERN = "product&product_id"
 
 # Ignore adding pages with the below pattern 
 IGNORE_FRAGMENTS = ('#mz', '#cart', '#section')
+
+# JSON file to which the crawled URLs are saved
+OUTPUT_CRAWL = "ecommerce_crawled_urls.json"

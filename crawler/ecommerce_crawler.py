@@ -98,6 +98,6 @@ class Crawler:
         try:
             with open(filename, 'w') as f:
                 json.dump(self.visited_urls, f, indent=2)
-            logging.info(f"Saved {len(self.visited_urls)} URLs to {filename}")
+            logging.info(f"\n\nSaved {len(self.visited_urls)} URLs to {filename}")
         except Exception as e:
             logging.error(f"Failed to save URLs to {filename}: {e}")
