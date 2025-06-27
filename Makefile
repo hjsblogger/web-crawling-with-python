@@ -16,7 +16,7 @@ test:
 
 .PHONY: test
 crawl-ecommerce-playground:
-	- $(PYTHON) main_crawler.py --filename $(CRAWL_FILENAME)
+	- $(PYTHON) main/main_crawler.py --filename $(CRAWL_FILENAME)
 
 scrap-ecommerce-playground:
 	- $(PYTHON) scraper/ecommerce_scraper.py --filename $(CRAWL_FILENAME)
