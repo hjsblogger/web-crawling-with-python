@@ -63,10 +63,10 @@ def scrap_ecommerce(url) -> list:
 
     # Create a dictionary of the meta-data of the items on e-commerce store
     meta_data_dict = {
-        'product name': name.get_text(),
+        'product name': name.get_text(strip=True),
         # Find the immediate sibling <a> tag and print the text
         'product brand': brand.find_next_sibling("a").get_text().strip(),
-        'product price': price.get_text(),
+        'product price': price.get_text(strip=True),
         'product availability': stock_txt
     }
     
